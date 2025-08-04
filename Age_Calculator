@@ -8,5 +8,3 @@ def age_calculator():
     else:
         print(f"you are {years} old")
         print(f"You will be 50 in {user_input + 50}")
-@mawaxx
-Comment
