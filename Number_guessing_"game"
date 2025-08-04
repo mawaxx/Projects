@@ -1,0 +1,22 @@
+def number_guessing():
+    import random
+    count = 1
+    number = random.randint(0, 100)
+    user_input = input(f"Press Enter to start")
+    while user_input != number:
+        while True:
+            try:
+                user_input = int(input("Choose a number "))
+                if user_input > number:
+                    print(f"Too high")
+                    count += 1
+                elif user_input < number:
+                    print(f"Too Low")
+                    count += 1
+                break
+            except ValueError:
+                print ("Invalid input, please input a number")
+    else:
+        print(f"Bravo, you guessed right in {count} tries")
+        return
+number_guessing()
