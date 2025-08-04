@@ -1,0 +1,15 @@
+def even_odd():
+    user_input = input("Press enter to start")
+    while user_input := (f"exit"):
+        while True:
+            try:
+                user_input = int(input("Input a number here "))
+                if user_input % 2 == 0:
+                    print("Even")
+                elif user_input % 2 != 0:
+                    print("Odd")
+                elif user_input == "exit":
+                    break
+            except ValueError:
+                print("your input is not valid")
+even_odd()
