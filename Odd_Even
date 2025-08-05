@@ -1,6 +1,6 @@
 def even_odd():
     user_input = input("Press enter to start")
-    while user_input := (f"exit"):
+    while (user_input := input("Input a number here ")) != "exit":
         while True:
             try:
                 user_input = int(input("Input a number here "))
