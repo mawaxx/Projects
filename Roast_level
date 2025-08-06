@@ -1,0 +1,21 @@
+def Coffee_level():
+    green_coffee = int(input("input amount of green beans: "))
+    roasted_coffee = int(input("input amount of roasted beans: "))
+    roast_level = (green_coffee - roasted_coffee) / green_coffee * 100
+    if roast_level < 10.3:
+        print(f"Your coffe lost {roast_level}" " %, which makes it underroasted")
+    elif 12 < roast_level < 12.7:
+        print(f"Your coffee lost {roast_level}" " % = City -")
+    elif 12.7 < roast_level <= 13.8:
+        print(f"Your Coffe lost {roast_level}" " % Which means City")
+    elif 13.8 < roast_level <= 15:
+        print(f"Your coffe lost {roast_level}" " % Which means City +")
+    elif 15 < roast_level <= 15.8:
+        print(f"Your coffee lost {roast_level}"" % Which means Full City")
+    elif 15.8 < roast_level < 16.4:
+        print(f"Your coffee lost {roast_level}"" % Which means Full City+")
+    elif 16.4 < roast_level < 17.6:
+        print(f"Your coffee lost {roast_level}" "% Which means French")
+    else:
+        print(f"Coffee is burnt at {roast_level}")
+Coffee_level()
